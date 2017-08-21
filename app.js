@@ -32,8 +32,6 @@ var controller = (function (budgetCtrl, UICtrl) {
   var ctrlAddItem = function () {
     var input = UICtrl.getInput()
     console.log(input)
-
-
   }
 
   document.querySelector(DOM.inputBtn).addEventListener('click', ctrlAddItem)
@@ -42,7 +40,5 @@ var controller = (function (budgetCtrl, UICtrl) {
     if (e.keyCode === 13 || e.which === 13) {
       ctrlAddItem()
     }
-
   })
-  
 })(budgetController, UIController)
